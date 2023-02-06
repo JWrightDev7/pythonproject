@@ -328,24 +328,6 @@ async def on_command_error(ctx, error):
     else:
         logger.warning(error)
 
-"""
-@client.event
-async def on_member_remove(member):
-    if member.guild.id == 223907467044716544:
-        goodbye = client.get_channel(474351822677475339)
-        await goodbye.send(f'{member.name} left the server.')
-    else:
-        return
-    
-@client.event
-async def on_member_join(member):
-    if member.guild.id == 223907467044716544:
-        welcome = client.get_channel(474351822677475339)
-        await welcome.send(f'Welcome to the server {member.name}')
-    else:
-        return 
-"""
-
 
 for filename in os.listdir('Path_to_Cogs_folder'):
     if filename.endswith('.py'):
